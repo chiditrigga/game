@@ -1,5 +1,5 @@
 
-let guess = window.prompt('guess a number from 1 -2')
+let guess = window.prompt('guess a number from 1 - 2')
 let count = 0;
 
 
