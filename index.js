@@ -1,9 +1,6 @@
 
 let guess = window.prompt('what')
 
-let config = (guess)=>{
-    alert(guess)
-}
 
 let list = [1,2]
 let randomElement = list[select()]
@@ -13,11 +10,18 @@ function select() {
   }
 
 
-
-while(guess == list.randomElement){
-config(guess)
-
-
-
+let config = (b)=>{
+    if (guess == randomElement){
+    alert('win')
+    console.log(randomElement)
+}else{
+    alert('boo')
+    console.log(randomElement)
 }
+}
+
+
+config(randomElement.value)
+
+
 
