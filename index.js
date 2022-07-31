@@ -1,27 +1,38 @@
 
 let guess = window.prompt('what')
+let count = 0;
 
 
 let list = [1,2]
 let randomElement = list[select()]
+
 function select() {
     let random = Math.random() * list.length;
     return Math.floor(random);
   }
 
-
-let config = (b)=>{
-    if (guess == randomElement){
-    alert('win')
+    let config = (b)=>{
+        
+      if(guess == randomElement){
+        
+    
+    alert('you win!')
     console.log(randomElement)
-}else{
-    alert('boo')
+    
+    
+
+      }else{
+  alert('you lose')
     console.log(randomElement)
-}
-}
+
+        }
+    }
 
 
-config(randomElement.value)
 
+
+
+
+    config(randomElement.value)
 
 
